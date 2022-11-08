@@ -9,11 +9,11 @@ class ResetSettingsDialog extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final String usedDb =
-        ref.watch(usedKeyValueDbProvider.notifier).state.describe;
+    // final String usedDb =
+    //     ref.watch(usedKeyValueDbProvider.notifier).state.describe;
     return AlertDialog(
       title: const Text('Reset Theme Settings'),
-      content: Text('Reset all $usedDb theme settings back to their '
+      content: Text('Reset all theme settings back to their '
           'default values?\n'
           'Persisted theme settings will also be updated to default '
           'values.'),

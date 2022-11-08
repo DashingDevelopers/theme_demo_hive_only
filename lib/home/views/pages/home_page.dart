@@ -9,7 +9,6 @@ import '../../../core/constants/app_icons.dart';
 import '../../../core/constants/app_insets.dart';
 import '../../../core/views/widgets/universal/page_body.dart';
 import '../../../drawer/views/app_drawer.dart';
-import '../../../persistence/key_value/views/key_value_db_list_tile.dart';
 import '../../../settings/controllers/settings.dart';
 import '../../../settings/views/dialogs/reset_settings_dialog.dart';
 import '../../../theme/views/widgets/show_color_scheme_colors.dart';
@@ -125,7 +124,6 @@ class _MyHomePageState extends ConsumerState<HomePage> {
                   'toggle the used implementation dynamically in the app.',
                 ),
               ),
-              const KeyValueDbListTile(),
               ListTile(
                 title: const Text('Reset settings'),
                 onTap: () async {
